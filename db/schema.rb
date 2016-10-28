@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161028085201) do
+ActiveRecord::Schema.define(version: 20161028210016) do
 
   create_table "categories", force: :cascade do |t|
     t.string   "name"
@@ -22,10 +22,11 @@ ActiveRecord::Schema.define(version: 20161028085201) do
     t.text     "description"
     t.string   "email"
     t.integer  "category_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
     t.integer  "cost"
     t.datetime "due_date"
+    t.boolean  "read",        default: false
     t.index ["category_id"], name: "index_tickets_on_category_id"
   end
 
