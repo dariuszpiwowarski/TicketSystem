@@ -30,6 +30,9 @@ gem 'jbuilder', '~> 2.5'
 # https://github.com/plataformatec/simple_form
 gem 'simple_form'
 
+# https://github.com/bokmann/business_time
+gem 'business_time'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
