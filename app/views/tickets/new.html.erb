@@ -1,6 +1,9 @@
+<div class="form">
+<h1>Add new ticket</h1>
 <%= simple_form_for @ticket do |f| %>
-  <%= f.input :description %>
+  <%= f.input :description, class: 'ticket-description' %>
   <%= f.input :email %>
   <%= f.association :category %>
   <%= f.button :submit %>
-<% end %>	
+<% end %>
+</div>

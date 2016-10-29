@@ -1,3 +1,9 @@
 // Place all the styles related to the Tickets controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+div.ticket_description textarea {
+    height: 200px;
+}
+div.form {
+	width: 500px;
+}

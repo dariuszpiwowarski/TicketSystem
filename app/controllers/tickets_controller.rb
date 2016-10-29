@@ -1,7 +1,6 @@
 class TicketsController < ApplicationController
 	def index
 		@tickets = Ticket.all
-		flash[:notice] = 'The ticket was saved'
 	end
 
 	def new
@@ -11,6 +10,7 @@ class TicketsController < ApplicationController
 	def create
 		@ticket = Ticket.new(ticket_params)
 		if @ticket.save
+			flash[:notice] = 'The ticket was saved'
 			redirect_to :tickets
 		else
 			render 'new'

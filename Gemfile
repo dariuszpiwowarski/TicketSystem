@@ -33,6 +33,8 @@ gem 'simple_form'
 # https://github.com/bokmann/business_time
 gem 'business_time'
 
+gem 'bootstrap3-rails'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
