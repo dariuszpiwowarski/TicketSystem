@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get 'tickets', to: 'tickets#index'
   get 'tickets/new', to: 'tickets#new'
   post 'tickets', to: 'tickets#create'
+  root 'tickets#index'
 end

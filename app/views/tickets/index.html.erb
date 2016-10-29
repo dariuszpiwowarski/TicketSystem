@@ -2,3 +2,4 @@
 	<%= content_tag :div, msg, class: 'alert alert-success' %>	
 <% end %>
 <p>Tickets: <%= @tickets.size %></p>
+<p><%= link_to 'Create a new ticket', tickets_new_path %></p>
