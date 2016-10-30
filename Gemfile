@@ -41,6 +41,8 @@ gem 'bootstrap3-rails'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  # https://github.com/brianhempel/rounding
+  gem 'rounding'
 end
 
 group :development do

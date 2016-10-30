@@ -6,7 +6,7 @@ class Ticket < ApplicationRecord
   	message: "Email format is not valid"
   }
 
-  before_save :add_cost_and_due_date
+  before_create :add_cost_and_due_date
 
   private
 
@@ -14,7 +14,7 @@ class Ticket < ApplicationRecord
   	price_and_fix_time_map = Category.price_and_fix_time_map
   	
   	if category = price_and_fix_time_map[self.category.name.to_sym]
-  		curr_time = Time.now
+  		curr_time = Time.zone.now
   		# Check if this ticket has special cost / due date
   		category[:hours_range] && category[:hours_range].each do |h_range, data|
   			if h_range.cover?(curr_time.strftime('%H:%M'))

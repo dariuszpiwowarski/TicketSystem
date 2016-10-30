@@ -8,7 +8,7 @@ class Category < ApplicationRecord
 		{
 	  		:Failure => {
 	  			:hours_range => {
-		  			'19:00'..'23:59' => {
+		  			'17:00'..'23:59' => {
 		  				:cost => 100,
 		  				:hours => 4
 		  			},

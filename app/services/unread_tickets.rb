@@ -4,7 +4,7 @@ class UnreadTickets
 		# {category_id: 1, cost: '>= 10', email: 'john@doe.com'}
 		tickets = Ticket.where(read: false)
 		if category_id = params[:category_id]
-			tickets = tickets.where(category_id: cat_id)
+			tickets = tickets.where(category_id: category_id)
 		end
 		if params[:cost]
 			begin
