@@ -5,6 +5,7 @@ rails db:migrate
 
 ##Database initialization
 After creating the tables we need to load categories:
+
 rails db:seed
 
 ##How to run the test suite 
